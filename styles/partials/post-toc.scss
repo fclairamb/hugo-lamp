@@ -1,0 +1,29 @@
+.post-toc {
+  position: relative;
+  float: right;
+  width: 200px;
+  right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background: $light;
+  font-size: $toc-font-size;
+  margin-left: $space-normal;
+  .post-toc-title {
+    text-align: center;
+    font-size: $toc-font-size;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .post-toc-content {
+    >nav>ul {
+      margin: $space-normal 0;
+    }
+    ul {
+      padding-left: $space-normal;
+      list-style: square;
+      ul {
+        padding-left: $space-normal;
+      }
+    }
+  }
+}
